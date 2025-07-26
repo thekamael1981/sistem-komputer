@@ -2,11 +2,21 @@
 
 ## Overview
 
-This is an interactive static web application for teaching Computer Systems (Sistem Komputer) to Indonesian high school students (grades X, XI, XII). The application provides educational content, interactive quizzes, and animated visualizations without requiring any backend infrastructure or user authentication.
+This is an interactive static web application for teaching Computer Systems (Sistem Komputer) to Indonesian high school students (grades X, XI, XII). The application provides comprehensive educational content with progressive learning levels (Dasar-Menengah-Lanjut), interactive quizzes, animated visualizations, and pedagogical components (Apersepsi, Pertanyaan Pemantik, Refleksi) following modern Indonesian educational methodology.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+## Recent Changes (July 26, 2025)
+
+Enhanced the application with comprehensive educational structure:
+- Added Apersepsi (pre-learning context) for each grade level
+- Integrated Pertanyaan Pemantik (stimulating questions) to engage students
+- Implemented three-tier learning levels (Dasar/Menengah/Lanjut) for each grade
+- Added Refleksi sections for learning assessment and future planning
+- Expanded content depth with real-world analogies and technical details
+- Enhanced visual design with color-coded learning levels and improved responsiveness
 
 ## System Architecture
 
@@ -29,20 +39,34 @@ Preferred communication style: Simple, everyday language.
 - **Tab-based Navigation**: Three main sections for grades X, XI, and XII
 - **Active State Management**: JavaScript-controlled tab switching
 - **Responsive Menu**: Adapts to different screen sizes
+- **Visual Hierarchy**: Clear distinction between learning phases and content levels
 
 ### 2. Educational Content Structure
-- **Grade X (Dasar)**: Basic computer system concepts
-  - Computer system definition
-  - Hardware, software, brainware components
-  - Device functions and examples
-- **Grade XI (Menengah)**: Intermediate architecture concepts
-  - Computer architecture: CPU, ALU, CU, registers
-  - Input-process-output cycles
-  - Memory types: RAM, ROM, Cache
-- **Grade XII (Lanjut)**: Advanced system concepts
-  - Operating systems and functions
-  - Booting process and BIOS
-  - Virtualization and cloud computing
+Each grade level now includes comprehensive pedagogical components:
+
+#### **Pedagogical Framework**
+- **Apersepsi**: Real-world context to connect student experiences with lesson content
+- **Pertanyaan Pemantik**: Stimulating questions to trigger curiosity and critical thinking
+- **Progressive Learning Levels**: Three-tier structure for each grade
+  - Level Dasar (Basic): Fundamental concepts with simple analogies
+  - Level Menengah (Intermediate): Detailed explanations with technical depth
+  - Level Lanjut (Advanced): Complex topics with practical applications
+- **Refleksi**: Self-assessment questions and future learning plans
+
+#### **Grade X Content Structure**
+- **Level Dasar**: Basic computer system understanding with simple analogies
+- **Level Menengah**: Detailed hardware/software/brainware categories and functions
+- **Level Lanjut**: System interactions, brainware roles, and feedback cycles
+
+#### **Grade XI Content Structure**
+- **Level Dasar**: CPU components (ALU, Control Unit, Register) with simple explanations
+- **Level Menengah**: Fetch-Decode-Execute cycle and memory hierarchy
+- **Level Lanjut**: Performance optimization techniques and system factors
+
+#### **Grade XII Content Structure**
+- **Level Dasar**: Operating system concepts with everyday analogies
+- **Level Menengah**: OS functions and detailed booting process
+- **Level Lanjut**: Virtualization technologies and cloud computing models
 
 ### 3. Interactive Quiz System
 - **Randomized Questions**: Questions shuffle on each page load
@@ -53,10 +77,12 @@ Preferred communication style: Simple, everyday language.
 
 ### 4. Animation System
 - **Educational Visualizations**: Animated diagrams showing:
-  - Data flow from input to CPU to output
-  - Memory and instruction execution processes
-- **CSS Animations**: Smooth transitions and hover effects
+  - Data flow from input to CPU to output (Grade X)
+  - CPU instruction cycle: Fetch-Decode-Execute-Store (Grade XI)
+  - Computer booting process from power-on to OS ready (Grade XII)
+- **CSS Animations**: Smooth transitions, hover effects, and level-based color coding
 - **JavaScript Animations**: Interactive elements and state changes
+- **Progressive Visual Complexity**: Simple animations for basic levels, detailed for advanced levels
 
 ### 5. Teacher Branding
 - **Consistent Header**: Teacher information displayed prominently
